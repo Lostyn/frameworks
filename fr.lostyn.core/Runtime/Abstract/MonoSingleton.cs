@@ -1,19 +1,17 @@
 using UnityEngine;
 
-namespace Hyperfiction.Core {
-    public abstract class MonoSingleton<T> : MonoBehaviour where T : Component {
-        #region single implementation
-        private static T instance;
-        public static T Instance
+public abstract class MonoSingleton<T> : MonoBehaviour where T : Component {
+    #region single implementation
+    private static T instance;
+    public static T Instance
+    {
+        get
         {
-            get
-            {
-                if (instance == null)
-                    instance = FindObjectOfType<T>();
+            if (instance == null)
+                instance = FindObjectOfType<T>();
 
-                return instance;
-            }
+            return instance;
         }
-        #endregion
     }
+    #endregion
 }
