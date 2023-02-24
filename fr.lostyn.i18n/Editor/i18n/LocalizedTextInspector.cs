@@ -1,14 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEditor;
-using System.IO;
-using System.Xml;
 using TMPro;
-using Hyperfiction.Core.i18n;
+using fr.lostyn.i18n;
 
-namespace Hyperfiction.Editor.Core.i18n
+namespace fr.lostyneditor.i18n
 {  
     [CanEditMultipleObjects]
     [CustomEditor(typeof(LocalizedText), true)]

@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace Hyperfiction.Core.i18n
+namespace fr.lostyn.i18n
 {        
     public class LocalizedText : MonoBehaviour, ILocalized
     {

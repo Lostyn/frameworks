@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Hyperfiction.Core.i18n
+﻿namespace fr.lostyn.i18n
 {  
     [System.Serializable]
     public class i18nString {

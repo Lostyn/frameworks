@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace Hyperfiction.Editor.Core.i18n
+namespace fr.lostyneditor.i18n
 {  
     public delegate void i18nSelectKeyHandler(string result);
     public class i18nWindowPicker : EditorWindow

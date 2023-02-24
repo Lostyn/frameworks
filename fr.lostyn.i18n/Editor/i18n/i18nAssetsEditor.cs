@@ -1,16 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEditor;
-using System.IO;
-using Hyperfiction.Core.i18n;
+using fr.lostyn.i18n;
 using System.Linq;
 using UnityEngine.Networking;
 using System;
 using System.Xml;
 
-namespace Hyperfiction.Editor.Core.i18n
+namespace fr.lostyneditor.i18n
 {
     [CustomEditor(typeof(i18nAssets), true)]
     public class i18nAssetsEditor : UnityEditor.Editor

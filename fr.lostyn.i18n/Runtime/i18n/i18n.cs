@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using System.IO;
-using System;
 using System.Xml;
-using System.Collections.Generic;
 using System.Linq;
 
 #if UNITY_EDITOR
@@ -31,7 +29,7 @@ using UnityEditor;
 ///	    </test>
 ///</root>
 /// </summary>
-namespace Hyperfiction.Core.i18n
+namespace fr.lostyn.i18n
 {  
     public class i18n : MonoBehaviour
     {

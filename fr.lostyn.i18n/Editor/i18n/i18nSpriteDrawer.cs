@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using Hyperfiction.Core.i18n;
+using fr.lostyn.i18n;
 
-namespace Hyperfiction.Editor.Core.i18n 
+namespace fr.lostyneditor.i18n
 {
     [CustomPropertyDrawer(typeof(i18nSprite))]
     public class i18nSpriteDrawer : PropertyDrawer

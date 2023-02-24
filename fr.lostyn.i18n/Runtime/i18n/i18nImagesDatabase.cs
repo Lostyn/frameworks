@@ -7,7 +7,7 @@ using UnityEngine;
  * Databse of localized image
  *   Must be placed in Resources directory
  */
-namespace Hyperfiction.Core.i18n
+namespace fr.lostyn.i18n
 {
     [CreateAssetMenu(menuName = "i18n/Images Database", fileName = "i18nImagesDatabase")] 
     public class i18nImagesDatabase : ScriptableObject

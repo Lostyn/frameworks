@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Hyperfiction.Core.i18n
+namespace fr.lostyn.i18n
 {
     public class LocalizedImage : MonoBehaviour, ILocalized
     {

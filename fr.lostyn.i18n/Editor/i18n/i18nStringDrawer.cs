@@ -1,10 +1,10 @@
 ﻿using UnityEditor;
 using UnityEngine;
-using Hyperfiction.Core.i18n;
+using fr.lostyn.i18n;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 
-namespace Hyperfiction.Editor.Core.i18n
+namespace fr.lostyneditor.i18n
 {  
     [CustomPropertyDrawer(typeof(i18nString))]
     public class i18nStringDrawer : PropertyDrawer

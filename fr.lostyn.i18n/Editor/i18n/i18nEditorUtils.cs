@@ -1,12 +1,10 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml;
 using UnityEditor;
 using UnityEngine;
 
-namespace Hyperfiction.Editor.Core.i18n {
+namespace fr.lostyneditor.i18n {
     [InitializeOnLoad]
     public static class i18nEditorUtils 
     {
