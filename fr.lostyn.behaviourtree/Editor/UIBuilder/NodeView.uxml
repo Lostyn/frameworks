@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/fr.losytn.behaviourtree/Editor/UIBuilder/NodeView.uss?fileID=7433441132597879392&amp;guid=9a7191be106d7d64eacb226ce07887f2&amp;type=3#NodeView" />
+    <ui:VisualElement name="node-border" picking-mode="Ignore">
+        <ui:VisualElement name="input" picking-mode="Ignore" />
+        <ui:VisualElement name="divider" picking-mode="Ignore" class="horizontal" />
+        <ui:VisualElement name="title" picking-mode="Ignore" style="border-left-width: 2px; border-left-color: rgb(52, 255, 88); border-right-color: rgb(52, 255, 88); border-top-color: rgb(52, 255, 88); border-bottom-color: rgb(52, 255, 88); border-right-width: 0; border-top-width: 0; border-bottom-width: 0;">
+            <ui:Label name="title-label" text="RootNode" picking-mode="Ignore" class="unity-text-element unity-label" />
+            <ui:VisualElement name="title-state-container" picking-mode="Ignore">
+                <ui:VisualElement name="icon" picking-mode="Ignore" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="divider" picking-mode="Ignore" class="horizontal" />
+        <ui:IMGUIContainer name="data-container" picking-mode="Ignore" />
+        <ui:VisualElement name="divider" picking-mode="Ignore" class="horizontal" />
+        <ui:VisualElement name="output" picking-mode="Ignore" />
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" picking-mode="Ignore" />
+</ui:UXML>

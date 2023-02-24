@@ -1,0 +1,16 @@
+{
+    "name": "fr.lostyn.i18n",
+    "version": "1.0.0",
+    "displayName": "Lostyn Framework Internationalization",
+    "description": "Internationalization system",
+    "unity": "2021.3",
+    "unityRelease": "8f1",
+    "dependencies": {
+
+    },
+    "author": {
+        "name": "Vincent Spiandore",
+        "email": "",
+        "url": "https://github.com/Lostyn"
+    }
+}

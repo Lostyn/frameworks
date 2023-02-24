@@ -1,0 +1,16 @@
+{
+    "name": "fr.lostyn.core",
+    "version": "1.0.0",
+    "displayName": "Lostyn Core scripts Framework",
+    "description": "Core utility script",
+    "unity": "2021.3",
+    "unityRelease": "8f1",
+    "dependencies": {
+
+    },
+    "author": {
+        "name": "Vincent Spiandore",
+        "email": "",
+        "url": "https://github.com/Lostyn"
+    }
+}

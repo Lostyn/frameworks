@@ -1,0 +1,15 @@
+{
+  "name": "fr.lostyn.inspector",
+  "version": "1.0.0",
+  "displayName": "Lostyn inspector extensions",
+  "description": "Inspector meta tags for unity",
+  "unity": "2021.3",
+  "dependencies": {
+
+  },
+  "author": {
+      "name": "Vincent Spiandore",
+      "email": "",
+      "url": "https://github.com/Lostyn"
+  }
+}

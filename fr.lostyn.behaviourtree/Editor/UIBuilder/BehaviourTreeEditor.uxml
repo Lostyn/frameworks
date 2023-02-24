@@ -1,0 +1,50 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/BehaviourTree/Editor/UIBuilder/BehaviourTreeEditor.uss?fileID=7433441132597879392&amp;guid=b59e6d839ccdbeb4990a5beb7c007cc6&amp;type=3#BehaviourTreeEditor" />
+    <uie:Toolbar>
+        <uie:ToolbarMenu display-tooltip-when-elided="true" text="Assets " />
+    </uie:Toolbar>
+    <SplitView fixed-pane-initial-dimension="350">
+        <ui:VisualElement name="left-panel">
+            <SplitView orientation="Vertical" fixed-pane-initial-dimension="8000">
+                <ui:VisualElement name="inspector-container">
+                    <ui:Label text="Inspector" display-tooltip-when-elided="true" style="background-color: rgb(25, 25, 25);" />
+                    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" vertical-scroller-visibility="Auto" horizontal-scroller-visibility="Hidden">
+                        <InspectorView style="padding-left: 4px; padding-right: 4px; padding-top: 4px; padding-bottom: 4px;" />
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                <ui:VisualElement name="blackboard-container" style="min-height: 100px;">
+                    <ui:Label text="Blackboard" display-tooltip-when-elided="true" style="background-color: rgb(25, 25, 25);" />
+                    <BlackboardView />
+                </ui:VisualElement>
+            </SplitView>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel">
+            <ui:Label text="Tree View" display-tooltip-when-elided="true" name="title-label" style="background-color: rgb(25, 25, 25);" />
+            <BehaviourTreeView focusable="true" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </SplitView>
+    <ui:VisualElement name="legend">
+        <ui:VisualElement class="state-owner">
+            <ui:VisualElement name="VisualElement" class="state-preview" style="align-items: center; justify-content: center; background-color: rgb(60, 60, 60); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(32, 32, 32); border-right-color: rgb(32, 32, 32); border-top-color: rgb(32, 32, 32); border-bottom-color: rgb(32, 32, 32);">
+                <ui:Label text="A" display-tooltip-when-elided="true" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+            </ui:VisualElement>
+            <ui:Label text="Recentrer la vue" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement class="state-owner">
+            <ui:VisualElement name="VisualElement" class="state-preview waiting" />
+            <ui:Label text="Waiting" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement class="state-owner">
+            <ui:VisualElement name="VisualElement" class="running state-preview" />
+            <ui:Label text="Running" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement class="state-owner">
+            <ui:VisualElement name="VisualElement" class="state-preview completed" />
+            <ui:Label text="Completed" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:VisualElement class="state-owner">
+            <ui:VisualElement name="VisualElement" class="state-preview canceled" />
+            <ui:Label text="Canceled" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

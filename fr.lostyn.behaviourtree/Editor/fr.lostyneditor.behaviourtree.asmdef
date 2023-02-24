@@ -1,0 +1,16 @@
+{
+    "name": "fr.lostyneditor.behaviourtree",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1742b72611b1d30499045bb23c366e7d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
