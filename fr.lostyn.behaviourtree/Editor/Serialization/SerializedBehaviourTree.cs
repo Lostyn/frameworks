@@ -40,7 +40,17 @@ public class SerializedBehaviourTree {
     }
 
     public void DeleteNode(SerializedProperty array, Node node) {
-        for (int i = 0; i < array.arraySize; ++i) {
+       for (int i = 0; i < array.arraySize; ++i) {
+            var current = array.GetArrayElementAtIndex(i);
+            if (current.FindPropertyRelative(sPropGuid).stringValue == node.guid) {
+                array.DeleteArrayElementAtIndex(i);
+                return;
+            }
+        }
+    }
+
+    public void DeletePreviousNode(SerializedProperty array, Node node) {
+       for (int i = 0; i < array.arraySize; ++i) {
             var current = array.GetArrayElementAtIndex(i);
             if (current.stringValue == node.guid) {
                 array.DeleteArrayElementAtIndex(i);
@@ -48,6 +58,8 @@ public class SerializedBehaviourTree {
             }
         }
     }
+
+
 
     public Node CreateNodeInstance(System.Type type) {
         Node node = System.Activator.CreateInstance(type) as Node;
@@ -90,9 +102,6 @@ public class SerializedBehaviourTree {
     }
 
     public void AddChild(Node parent, Node child) {
-        Debug.Log("Parent: " + parent);
-        Debug.Log("child: " + child);
-
         // Nexts
         var parentProperty = FindNode(Nodes, parent);
         var nextProperty = parentProperty.FindPropertyRelative(sPropNext);
@@ -124,7 +133,7 @@ public class SerializedBehaviourTree {
         var childProperty = FindNode(Nodes, child);
         var previousProperty = childProperty.FindPropertyRelative(sPropPrevious);
         if (previousProperty != null) {
-            DeleteNode(previousProperty, child);
+            DeletePreviousNode(previousProperty, parent);
         }
 
         Save();

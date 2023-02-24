@@ -29,7 +29,7 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
         }
     }
 
-    public NodeView(SerializedBehaviourTree tree, Node node) : base("Assets/fr.losytn.behaviourtree/Editor/UIBuilder/NodeView.uxml") {
+    public NodeView(SerializedBehaviourTree tree, Node node) : base("Assets/fr.lostyn.behaviourtree/Editor/UIBuilder/NodeView.uxml") {
         this.serializer = tree;
         this.node = node;
         this.title = node.GetType().Name.Replace("Node", "");

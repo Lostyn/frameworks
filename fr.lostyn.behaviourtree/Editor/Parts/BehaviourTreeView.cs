@@ -32,7 +32,7 @@ public class BehaviourTreeView : GraphView, IDisposable
         this.AddManipulator( new SelectionDragger());
         this.AddManipulator( new RectangleSelector());
     
-        var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/fr.losytn.behaviourtree/Editor/UIBuilder/BehaviourTreeEditor.uss");
+        var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/fr.lostyn.behaviourtree/Editor/UIBuilder/BehaviourTreeEditor.uss");
         styleSheets.Add(styleSheet);
         serializeGraphElements += SerializeForCopy;
         unserializeAndPaste += UnserializeAndPaste;
